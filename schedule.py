@@ -6,11 +6,9 @@ class Schedule:
         self.courses = {}
 
     def add_entry(self, item):
-        """Add ScheduleItem to dictionary"""
         self.courses[item.get_key()] = item
 
     def load_from_csv(self, filename):
-        """Load CSV file"""
         with open(filename, encoding='utf-8-sig', newline='') as file:
             reader = csv.DictReader(file)
 
@@ -29,7 +27,6 @@ class Schedule:
                     )
                     self.add_entry(item)
                 except:
-                    # Skip bad rows (like #REF! etc.)
                     continue
 
     def print_header(self):
@@ -39,7 +36,6 @@ class Schedule:
               f"{'Instructor'}")
 
     def print(self, items=None):
-        """Print all or filtered items"""
         self.print_header()
 
         if items is None:
