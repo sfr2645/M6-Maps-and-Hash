@@ -6,7 +6,7 @@ class ScheduleItem:
     catalog: str
     section: str
     component: str
-    session: st
+    session: str
     units: int
     tot_enrl: int
     cap_enrl: int
