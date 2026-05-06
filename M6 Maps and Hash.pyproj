@@ -21,7 +21,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="main.py" />
+    <Compile Include="schedule_item.py" />
     <Compile Include="schedule.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="courses.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
