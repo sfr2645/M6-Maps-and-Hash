@@ -34,7 +34,7 @@ def main():
             schedule.print(results)
 
         elif choice == "5":
-            print("Goodbye")
+            print("Goodbye!")
             break
 
         else:
