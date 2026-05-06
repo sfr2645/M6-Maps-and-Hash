@@ -27,7 +27,7 @@ class Schedule:
                     )
                     self.add_entry(item)
                 except:
-                    continue
+                    continu
 
     def print_header(self):
         print(f"{'Subject':<6}{'Catalog':<8}{'Section':<8}"
