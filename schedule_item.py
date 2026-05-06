@@ -13,11 +13,9 @@ class ScheduleItem:
     instructor: str
 
     def get_key(self):
-        """Return unique dictionary key"""
         return f"{self.subject}_{self.catalog}_{self.section}"
 
     def print(self):
-        """Print formatted row"""
         print(f"{self.subject:<6}{self.catalog:<8}{self.section:<8}"
               f"{self.component:<10}{self.session:<6}"
               f"{self.units:<6}{self.tot_enrl:<8}{self.cap_enrl:<8}"
